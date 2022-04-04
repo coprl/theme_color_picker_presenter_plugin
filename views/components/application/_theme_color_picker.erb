@@ -1,0 +1,18 @@
+<div id="<%= comp.id %>"
+     class="v-plugin v-plugin--color-picker v-input mdc-text-field mdc-text-field--outlined v-focusable"
+     style="height: auto; max-width: 100%;"
+     data-plugin-callback="ThemeColorPicker"
+     <% if comp.preview_data %>
+       data-preview-section-id= "<%= comp.preview_data[:section] %>"
+       data-preview-vars='<%= comp.preview_data[:set_vars].presence || [] %>'
+     <% end %>
+    >
+  <a href="#" class="button v-color-picker">
+  </a>
+  <input class="v-color-input v-input form-control v-hidden-field"
+         name="<%= comp.name %>"
+         value="<%= comp.value %>"
+         <%= partial "components/event",
+                     locals: { comp: comp, events: comp.events, parent_id:  "#{comp.id}-input" }
+         %>>
+</div>

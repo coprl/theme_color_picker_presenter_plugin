@@ -18,7 +18,7 @@ And then execute:
 
 ## Usage in POMs
 
-Declare the plugin in your pom, `plugin :theme_ color_picker`.
+Declare the plugin in your pom, `plugin :theme_color_picker`.
 
 ```ruby
 Coprl::Presenters.define(:my_pom) do

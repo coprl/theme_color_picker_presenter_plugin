@@ -4,7 +4,7 @@
      data-plugin-callback="ThemeColorPicker"
      <% if comp.preview_data %>
        data-preview-section-id= "<%= comp.preview_data[:section] %>"
-       data-preview-vars='<%= comp.preview_data[:set_vars].presence || [] %>'
+       data-preview-vars='<%= h comp.preview_data[:set_vars].presence || [] %>'
      <% end %>
     >
   <a href="#" class="button v-color-picker">

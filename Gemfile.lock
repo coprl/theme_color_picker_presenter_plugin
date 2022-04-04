@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    theme_color_picker_presenter_plugin (0.0.1)
+    theme_color_picker_presenter_plugin (0.1)
 
 GEM
   remote: https://rubygems.org/
@@ -13,8 +13,8 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 2.0)
-  theme_color_picker_presenter_plugin!
   rake (~> 10.0)
+  theme_color_picker_presenter_plugin!
 
 BUNDLED WITH
-   2.2.20
+   2.3.10

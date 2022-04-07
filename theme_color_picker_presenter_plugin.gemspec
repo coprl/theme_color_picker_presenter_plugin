@@ -4,7 +4,7 @@ require 'theme_color_picker_presenter_plugin/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'theme_color_picker_presenter_plugin'
-  spec.version       = ColorPickerPresenterPlugin::VERSION
+  spec.version       = ThemeColorPickerPresenterPlugin::VERSION
   spec.authors       = ["Russell Edens"]
   spec.email         = ["russell@voomify.com"]
 

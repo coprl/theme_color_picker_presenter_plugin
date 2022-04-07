@@ -1,0 +1,6 @@
+.v-color-picker {
+    box-sizing: border-box;
+    padding: .5em 1em;
+    min-height: 2em;
+    cursor: pointer;
+}

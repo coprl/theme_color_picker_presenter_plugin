@@ -12,6 +12,7 @@
   <input class="v-color-input v-input form-control v-hidden-field"
          name="<%= comp.name %>"
          value="<%= comp.value %>"
+         data-default-value="<%= comp.default %>"
          <%= partial "components/event",
                      locals: { comp: comp, events: comp.events, parent_id:  "#{comp.id}-input" }
          %>>

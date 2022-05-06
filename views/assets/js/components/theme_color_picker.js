@@ -31,10 +31,23 @@ class ThemeColorPicker {
           const parsedPreviewVars = JSON.parse(this.component.dataset['previewVars']);
           updateColorVars(color.hex, previewSectionId, parsedPreviewVars)
         }
+
+        this.toggleDefaultColorWarning();
       },
    });
   }
 
+  toggleDefaultColorWarning () {
+    const warningElement = document.getElementById(`default_${this.colorInput.name}_warning`);
+    if (warningElement === null ) { return }
+
+    if (this.colorInput.dataset['defaultValue'].toLowerCase() === this.colorInput.value.toLowerCase()) {
+      warningElement.style.display = 'block';
+    }
+    else {
+      warningElement.style.display = 'none';
+    }
+  }
 
   colorInputHandler () {
     const self = this;
